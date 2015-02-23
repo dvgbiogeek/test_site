@@ -1,0 +1,21 @@
+Make project folder
+$ mkdir basic_django
+$ cd basic_django
+
+Set up virtualenv for project- installs pip and setuptools
+$ virtualenv venv
+$ source venv/bin/activate
+
+pip install Django in virtual environment
+$ pip install Django
+
+Start a new project
+$ django-admin.py startproject basic
+
+Check project was made
+$ cd basic
+$ python manage.py runserver
+Navigation to 127.0.0.8000 should show successful Django page
+
+Add an app to basic project
+$ python manage.py startapp app_test
